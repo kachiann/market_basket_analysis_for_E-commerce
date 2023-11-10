@@ -1,4 +1,4 @@
-# Optimizing_cross_selling_strategies_through_market_basket_analysis_for_E-commerce
+# market_basket_analysis_for_E-commerce
 Data Analysis | Data Visualization | Python
 
 ## Table of Contents
