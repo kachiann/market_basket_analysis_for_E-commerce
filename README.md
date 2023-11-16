@@ -23,6 +23,7 @@ The objective of this project is to familiarize you with market basket analysis,
 To do this we will do the following: 
 - Create a Jupyter Notebook for data analysis using Pandas and Matplotlib.
 - Identify products frequently purchased together.
+- Construct recommendations based on these findings
 - Explore advanced visualization techniques.
 
 ## Results <a name="results"></a>
