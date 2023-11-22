@@ -1,7 +1,7 @@
 # market_basket_analysis_for_E-commerce
 Data Analysis | Data Visualization | Python
 
-## Table of Contents
+## Table of Contents 
 
 1. [Introduction](#introduction)
 2. [Tools](#tools)
@@ -31,6 +31,6 @@ To do this we will do the following:
 - Step 1: Importing the required libraries
 - Step 2: Loading and exploring the data
 - Step 3: Converting the data into a suitable format for analysis
-- Step 4:
+- Step 4: Apply Apriori Algorithm
 
  ### Analyzing Market Baskets Through Mathematical Insights
