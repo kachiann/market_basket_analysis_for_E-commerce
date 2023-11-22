@@ -11,7 +11,7 @@ Data Analysis | Data Visualization | Python
 
 ## Introduction <a name="introduction"></a>
 ### Understanding Market Basket Analysis
-Market basket analysis is a strategic tool employed by businesses such as restaurants, retail stores, and online shopping platforms to boost customer spending during a single shopping session. This application of data science in marketing plays a pivotal role in enhancing company revenues and fostering business expansion. Here is a [dataset](https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset/download) available on Kaggle.
+Market basket analysis is a strategic tool employed by businesses such as restaurants, retail stores, and online shopping platforms to boost customer spending during a single shopping session. This application of data science in marketing plays a pivotal role in enhancing company revenues and fostering business expansion. Here is a [dataset](https://www.kaggle.com/datasets/umairaslam/grocery/download) available on Kaggle. 
 
 ## Tools <a name="tools"></a>
 * Data Analysis Tools: Python (using libraries like [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/))
