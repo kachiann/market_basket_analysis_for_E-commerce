@@ -27,3 +27,10 @@ To do this we will do the following:
 - Explore advanced visualization techniques.
 
 ## Results <a name="results"></a>
+### Implementing the task in Python
+- Step 1: Importing the required libraries
+- Step 2: Loading and exploring the data
+- Step 3: Converting the data into a suitable format for analysis
+- Step 4:
+
+ ### Analyzing Market Baskets Through Mathematical Insights
