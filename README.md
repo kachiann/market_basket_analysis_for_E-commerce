@@ -32,5 +32,5 @@ To do this we will do the following:
 - Step 2: Loading and exploring the data
 - Step 3: Converting the data into a suitable format for analysis
 - Step 4: Apply Apriori Algorithm
-
+I have documented the principal results of my analysis in this [Jupyter Notebook].
  ### Analyzing Market Baskets Through Mathematical Insights
