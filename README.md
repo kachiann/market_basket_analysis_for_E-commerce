@@ -16,7 +16,6 @@ Market basket analysis is a strategic tool employed by businesses such as restau
 ## Tools <a name="tools"></a>
 * Data Analysis Tools: Python (using libraries like [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/))
 * Data Visualization Tools: [Matplotlib](https://matplotlib.org/stable/index.html), [Seaborn](https://seaborn.pydata.org/)
-* [Sklearn](https://sklearn.org/)
 
 ## Project Objective<a name="objective"></a>
 The objective of this project is to familiarize you with market basket analysis, a vital component of data science in retail and e-commerce. Through this project, you'll acquire the skills to extract valuable insights from transaction data, comprehend customer purchasing behavior, and leverage this knowledge for business optimization.
