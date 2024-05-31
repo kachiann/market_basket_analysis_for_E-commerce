@@ -1,4 +1,4 @@
-# market_basket_analysis_for_E-commerce
+# Market Basket Analysis for E-commerce
 Data Analysis | Data Visualization | Python
 
 ## Table of Contents 
