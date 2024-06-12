@@ -17,16 +17,26 @@ def recommend():
     items = request.form.getlist('items')
     items = [item.strip() for item in items]
 
+    # Check if all items are present in the dataset
+    missing_items = [item for item in items if item not in data.columns]
+
+    if missing_items:
+        return render_template('not_found.html', missing_items=missing_items)
+
     # Filter basket based on selected items
     filtered_basket = data[items]
 
     # Generate association rules
     frequent_itemsets = apriori(filtered_basket, min_support=0.01, use_colnames=True)
-    rules = association_rules(frequent_itemsets, metric = 'confidence', min_threshold=0.5)
+    rules = association_rules(frequent_itemsets, metric='confidence', min_threshold=0.5)
 
     # Filter rules to keep only relevant ones
-    filtered_rules = rules[(rules['antecedents'].apply(lambda x: set(items).issubset(x))) & (rules['consequents'].apply(lambda x: len(x) >= 1))]
-    filtered_rules = rules[(rules['lift']>1.5) & (rules['confidence']>0.7) ]
+    filtered_rules = rules[
+        (rules['antecedents'].apply(lambda x: set(items).issubset(x))) &  
+        (rules['consequents'].apply(lambda x: len(x) >= 1)) &
+        (rules['lift'] > 1.5) &
+        (rules['confidence'] > 0.7)
+    ]
 
     # Get recommendations
     recommendations = filtered_rules['consequents'].apply(lambda x: list(x)[0]).tolist()

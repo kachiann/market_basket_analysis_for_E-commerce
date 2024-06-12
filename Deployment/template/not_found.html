@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Item(s) Not Found</h1>
+        <p>The following item(s) are not available:</p>
+        <ul>
+            {% for item in missing_items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+        <p>Please make sure to enter valid items.</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
