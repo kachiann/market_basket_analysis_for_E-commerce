@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODOPIA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>FOODOPIA</h1>
+        <h2>What do you plan to buy today?</h2>
+        <form action="/recommend" method="post">
+            <ul id="item-list">
+                <li>
+                    <label for="item1">Item 1:</label>
+                    <input type="text" id="item1" name="items">
+                </li>
+                <li>
+                    <label for="item2">Item 2:</label>
+                    <input type="text" id="item2" name="items">
+                </li>
+            </ul>
+            <button type="button" id="add-item">Add more item</button>
+            <button type="submit">Recommend</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('add-item').addEventListener('click', function() {
+            var itemList = document.getElementById('item-list');
+            var newItem = document.createElement('li');
+            var newItemNumber = itemList.getElementsByTagName('li').length + 1;
+            newItem.innerHTML = '<label for="item' + newItemNumber + '">Item ' + newItemNumber + ':</label>' +
+                                '<input type="text" id="item' + newItemNumber + '" name="items">';
+            itemList.appendChild(newItem);
+        });
+    </script>
+</body>
+</html>
